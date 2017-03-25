@@ -1,0 +1,33 @@
+<style type="text/css"> 
+<!--  
+div { 
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	margin:-150px 0 0 -200px; 
+	width:400px; 
+	height:300px; 
+	border:1px solid #008800; 
+	} 
+--> 
+</style> 
+<div>让层垂直居中于浏览器窗口</div> 
+ 
+ 其实解决的思路是这样的：首们需要position:absolute;绝对定
+
+位。而层的定位点，使用外补丁margin负值的方法。负值的大小
+
+为层自身宽度高度除以二。 
+ 
+如：一个层宽度是400，高度是300。使用绝对定位距离上部与左
+
+部都设置成50%。而margin-top的值为－150。margin-left的值
+
+为－200。这样我们就实现了层垂直居中于浏览器的样式编写  
+ 
+注：上面的是一般用于垂直居中与浏览器，想解决div垂直居中与
+
+外层div的话，只需要给外层div加上position:relative;就好了
+
+；记住，外层div要设定高度和宽度 
+
