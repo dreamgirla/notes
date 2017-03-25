@@ -1,0 +1,52 @@
+CSS技术学习大纲（张九鹏）
+
+掌握选择器及其用法：
+通配选择器		* {}
+标签选择器		span {}, div {}
+类选择器		.classname {}
+id选择器		#elename {}
+组选择器		div, #idc, .classc {}
+复合选择器		div.classname {}
+派生选择器		div .classname {}
+
+*想进阶的同学可以再了解一下以下几种高级用法
+子元素选择器	div>span {}
+相邻元素选择器	div+span {}
+伪类后缀		:hover, :active, :visited, :nth-child(2n), :only-child, :enabled, :not(State)等
+
+CSS3经典属性：
+border-radius
+box-shadow
+box-reflect
+box-flex
+text-shadow
+linear-gradient
+radial-gradient
+transform[rotate, scale, skew]
+animate[@keyframes]
+
+多浏览器兼容的写法：
+-webkit-[attr]
+-moz-[attr]
+-ms-[attr]
+-o-[attr]
+attr
+
+对以上知识进行学习之后，可以做一个较美观的网页进行简单自测。自测完成后，才可以向下继续学习。
+
+媒介查询和响应式设计（IE9以上有效）
+自适应宽度：
+<meta name=”viewport” content="width=device-width"/>
+CSS媒介查询：
+@media screen and (max-width: 960px){}
+CSS自适应引入：
+<link rel="stylesheet" media="screen and (min-width: 960px)" href="styles/index.css"/>
+<link rel="stylesheet" media="screen and (max-width: 960px)" href="styles/mobile/index.css"/>
+CSS检测设备翻转：
+<link rel="stylesheet" media="screen and (orientation: portrait)" href=”protrait.css”/>
+<link rel="stylesheet" media="screen and (orientation: landscape)" href=”landscape.css”/>
+
+学习完以上知识后，大家就可以编写简单的自适应网页了，建议一个网页写两组CSS，一组是PC端的，一组是移动端的，写完以后通过媒介查询引入不同的样式，通过此次编码你们就能领会到CSS与HTML代码解耦的重要性了。
+
+真正想向前台方向发展或对此有强烈兴趣的同学，可以开展以下CSS框架的学习。
+比较知名的几种CSS框架有Bootstrap、Foundation等，建议大家上网进行自学。
